@@ -1,0 +1,44 @@
+
+body{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    }
+    .slider{
+    height:100vh;
+    width:100%;
+    background-image:url(block.png);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    transition:5s;
+    text-align:center;
+    animation-name: animate;
+    animation-direction:alternate-reverse;
+    animation-duration:30s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-play-state:running;
+    animation-timing-function:ease-in-out;
+    }
+    @keyframes animate{
+    0%{
+    background-image:url(building.png);
+    }20%{
+    background-image:url(lab.png);
+    }30%{
+    background-image:url(lib.png);
+    }40%{
+    background-image:url(auditorium.png);
+    }
+    }
+    .clg{
+    margin:10px;
+    padding:0;
+    font-family:'Times New Roman';
+    font-size:40px;
+    text-shadow:2px 2px 4px #000000;
+    }
+    
+    

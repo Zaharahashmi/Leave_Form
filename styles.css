@@ -1,0 +1,149 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+header nav ul li a:hover {
+    color: #1eb300;
+}
+
+/* Main Content Styles */
+.main-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-section h1,
+.dashboard-section h2,
+.dashboard-section h3 {
+    color: #007bff;
+}
+
+.dashboard-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.leave-requests {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.leave-request {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.leave-request h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.leave-request p {
+    font-size: 14px;
+}
+
+.actions {
+    margin-top: 10px;
+}
+
+.approve-btn,
+.reject-btn {
+    padding: 8px 16px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.approve-btn:hover,
+.reject-btn:hover {
+    background-color: #1eb300;
+}
+
+/* Table Styles */
+.leave-history {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.leave-history th,
+.leave-history td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.leave-history th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.leave-history td {
+    background-color: #f9f9f9;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .main-content {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      background-image: url('sign.jpg'); 
+      background-size: cover; 
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f9f9f9;
+    }
+    .login-container {
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+    .login-form {
+      margin-top: 20px;
+    }
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-bottom: 1px solid #ddd;
+      outline: none;
+    }
+    .login-form input[type="button"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      outline: none;
+    }
+    .login-form input[type="button"]:hover {
+      background-color: #1eb300;
+    }
+    /* Message container */
+    .message-container {
+      margin-top: 20px;
+    }
+    .message-container p {
+      color: #007bff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form class="login-form" action="login.php" method="post">
+      <input type="text" placeholder="Email" autocomplete="off" name="email" id="email">
+      <input type="password" placeholder="Password" autocomplete="off" name="password" id="password">
+      <input type="submit" value="Login">
+    </form>
+    <div class="message-container" id="message-container"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet"  href="style.css">
+    <script type="text/javascript" src="validate.js"></script>
+    <title>Student Leave Request Form</title>
+  </head>
+  <body style="background-image:url(building.png);background-repeat:no-repeat; background-size: cover; background-position: center">
+    <div class="main">
+      <div class="register">
+    <h2>Student Leave Request Form</h2>
+    <form id="register" action="leave_insert.php" method="POST">
+      NAME:<br><input type="text"  name="name" autocomplete="off" style="width:300px;height:50px;font-size:20px" required><br><br>
+      ROLL_NO:<br><input type="text"  name="rno"  autocomplete="off" style="width:300px;height:50px;font-size:20px" required><br><br>
+      EMAIL:<br><input type="email" name="email"  autocomplete="off" style="width:300px;height:50px;font-size:20px" required><br><br>
+      START_DATE:<br><input type="date"  name="start_date"  autocomplete="off" style="width:300px;height:50px;font-size:20px" required><br><br>
+      END_DATE:<br><input type="date" name="end_date"  autocomplete="off" style="width:300px;height:50px;font-size:20px" required><br><br>
+      REASON:<br><input type="text"  name="reason"  autocomplete="off" style="width:300px;height:50px;font-size:20px" required></textarea><br><br>
+      <input type="submit" value="submit" name="submitval"  id="submit" onclick="validate()">
+    </form>
+    <div id="response"></div>
+      </div>
+    </div>
+  </body>
+</html>

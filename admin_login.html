@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            background-image: url('bg1.jpg'); 
+            background-size: cover; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        .login-container {
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .login-form {
+            margin-top: 20px;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+            outline: none;
+        }
+
+        .login-form input[type="button"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .login-form input[type="button"]:hover {
+            background-color: #1eb300;
+        }
+
+        /* Message container */
+        .message-container {
+            margin-top: 20px;
+        }
+
+        .message-container p {
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function checkUsername() {
+            var enteredUsername = document.getElementById("username").value.trim(); // Get entered username from input field
+            var enteredPassword = document.getElementById("password").value.trim(); // Get entered password from input field
+            var predefinedUsername = "kumaresansudharshini@gmail.com"; 
+            var predefinedPassword = "Sridevi@30"; // Define predefined username and password
+
+            // Check if username and password match predefined values
+            if (enteredUsername === predefinedUsername && enteredPassword === predefinedPassword) {
+                // Redirect to dashboard.php if credentials are correct
+                window.location.href = "dashboard.php";
+            } else {
+                // Show error message if credentials are incorrect
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form class="login-form" onsubmit="return false;">
+            <input type="text" placeholder="Username" autocomplete="off" id="username">
+            <input type="password" placeholder="Password" autocomplete="off" id="password">
+            <input type="button" value="Login" onclick="checkUsername()">
+        </form>
+    </div>
+</body>
+</html>
